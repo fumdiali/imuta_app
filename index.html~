@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ImutA|Learn Free</title>
+    <!-- Include meta tag to ensure proper rendering and touch zooming -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Include jQuery Mobile stylesheets -->
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+<!-- Include the jQuery library -->
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<!-- Include the jQuery Mobile library -->
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <style>
+  body{
+    background-color: #0ff;
+    font-family:"Lucida Grande";
+    font-size:120%;
+}
+  div #landbak{background-color: #0f0;}  
+  #logo a{font-family: "Lucida Console", Courier, monospace;font-size: 23px;}
+  input,h4,{text-align: center;}
+  .ui-content{text-align:center;}
+  #numsimage{border-radius: 7px;}
+  </style>  
+  </head>
+  <body>
+  <!--landing page-->
+  <div data-role="page" id="landing">
+  <div data-role="header">
+    <div data-role="navbar" id="landbak">
+      <ul>
+        <li id="logo"><a href="#about">Imuta</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <form method="post" action="#">
+    <input type="email" name="mail" id="mail" placeholder="you@somewhere.com" data-clear-btn="true">
+    <input type="password" name="pass" id="pass" placeholder="Your Password" data-clear-btn="true">
+    <a href="#home" class="ui-btn">Sign In</a>
+    <h4>No Account?<a href="#" > Join Us</a></h4>
+    </form>
+  </div>
+
+  <div data-role="footer">
+    <h1>Insert Footer Text Here</h1>
+  </div>
+</div> 
+  <!--endof landing-->
+  
+  <!--home page-->
+  <div data-role="page" id="home">
+  <div data-role="header">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#landing" class="ui-btn ui-icon-back ui-btn-left ui-btn-icon-notext">Back</a></li>
+        <li><a href="#mylist" data-rel="popup" class="ui-btn ui-corner-all ui-icon-bars ui-btn-right ui-btn-icon-notext">Bars</a></li>
+      </ul>
+    </div>
+  </div>
+  <!--mylist popup-->
+  <div data-role="popup" id="mylist">
+  <p>About</p>
+  <p>Profile</p>
+  <p>Friends</p>
+  <p>Downloads</p>
+</div><!--endof mylist popup-->
+
+  <div data-role="main" class="ui-content">
+    <ul data-role="listview" data-inset="true">
+  <li><a href="#numbers">Numbers</a></li>
+  <li><a href="#">Phrases</a></li>
+  <li><a href="#">Culture</a></li>
+  <li><a href="#">Random</a></li>
+  <li><a href="#">Advanced</a></li>
+</ul>
+  </div>
+
+  <div data-role="footer">
+    <h1>Insert Footer Text Here</h1>
+  </div>
+</div> 
+  <!--endof home-->
+  
+  <!--one activity-->
+  <div data-role="page" id="numbers">
+  <div data-role="header">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#home" class="ui-btn ui-icon-back ui-btn-left ui-btn-icon-notext">Back</a></li>
+        
+      </ul>
+    </div>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <h2>Learn about Numbers!!!</h2>
+    <img src="numbers.png" alt="image" id="numsimage">
+  <ul data-role="listview" data-inset="true">
+  
+  <li><a href="#">Video 1</a></li>
+  <li><a href="#">Video 2</a></li>
+  <li><a href="#">Video 3</a></li>
+  <li><a href="#">Video 4</a></li>
+  </ul>
+  </div>
+
+  <div data-role="footer">
+    <h1>Insert Footer Text Here</h1>
+  </div>
+</div> 
+  <!--endof one activity-->
+  </body>
+</html>
